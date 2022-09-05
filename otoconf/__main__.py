@@ -3,7 +3,7 @@ from typing import Optional
 
 import typer
 
-from resolvers import nginx_resolver
+from otoconf.resolvers import nginx_resolver
 
 app = typer.Typer()
 

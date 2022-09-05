@@ -28,7 +28,7 @@ def nginx_resolver(conf: Path, output: Path):
             if conf.exists():
                 file = file.replace(line, conf.read_text())
             else:
-                typer.echo(f'File {conf} does not exist (line {index + 1})', fg=typer.colors.RED)
+                typer.echo(f'File {conf} does not exist (line {index + 1})')
                 typer.Exit(1)
 
 
@@ -39,4 +39,4 @@ def nginx_resolver(conf: Path, output: Path):
     f.write(fmt.format_string(file))
     f.close()
 
-    typer.echo(f'Configuration file {output} created', fg=typer.colors.GREEN)
+    typer.echo(f'Configuration file {output} created')
