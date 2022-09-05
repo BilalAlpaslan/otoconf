@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "otoconf"
-version = "0.0.1"
+version = "0.1.0"
 description = "oto generate configuration for proxy tools."
 readme = "README.md"
 homepage = "https://github.com/BilalAlpaslan/otoconf"
