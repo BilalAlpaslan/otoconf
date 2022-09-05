@@ -29,7 +29,7 @@ def nginx_resolver(conf: Path, output: Path):
                 file = file.replace(line, conf.read_text())
             else:
                 typer.echo(f'File {conf} does not exist (line {index + 1})')
-                typer.Exit(1)
+                raise typer.Exit(1)
 
 
     output_dir = output.parent
